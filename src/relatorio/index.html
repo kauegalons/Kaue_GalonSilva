@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="../globals.css" />
+    <title>Relatório</title>
+  </head>
+  <body>
+    <div class="screen gradient">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="../index.html">Index</a></li>
+            <li><a href="../cadastro/index.html">Cadastro</a></li>
+            <li><a href="../produtos/index.html">Produto</a></li>
+            <li class="active">Relatório</li>
+          </ul>
+        </nav>
+      </header>
+      <main class="flex flex-col items-center shadow">
+        <div class="flex flex-col items-center container">
+          <h1>Relatório dos Clientes</h1>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>E-mail</th>
+                <th>Telefone</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Kaue Galon Silva</td>
+                <td>kauegls@gmail.com</td>
+                <td>(41)99888-8888</td>
+              </tr>
+              <tr>
+                <td>Kaue Galon Silva</td>
+                <td>kauegls@gmail.com</td>
+                <td>(41)99888-8888</td>
+              </tr>
+              <tr>
+                <td>William Felipe</td>
+                <td>WillFelipe@gmail.com</td>
+                <td>(41)99777-7777</td>
+              </tr>
+              <tr>
+                <td>William Felipe</td>
+                <td>WillFelipe@gmail.com</td>
+                <td>(41)99777-7777</td>
+              </tr>
+              <tr>
+                <td>Leonardo Kenji</td>
+                <td>LeoKenji@gmail.com</td>
+                <td>(41)99666-6666</td>
+              </tr>
+              <tr>
+                <td>Leonardo Kenji</td>
+                <td>LeoKenji@gmail.com</td>
+                <td>(41)99666-6666</td>
+              </tr>
+            </tbody>
+          </table>
+
+
+          <a href="#">Exibir mais.</a>
+          <dialog>
+          <div class="flex flex-col items-center container">
+            <h1>Relatório Completo</h1>
+
+            <table>
+              <thead>
+                <tr>
+                  <th>Nome</th>
+                  <th>E-mail</th>
+                  <th>Telefone</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>Kaue Galon Silva</td>
+                  <td>kauegls@gmail.com</td>
+                  <td>(41)99888-8888</td>
+                </tr>
+                <tr>
+                  <td>Kaue Galon Silva</td>
+                  <td>kauegls@gmail.com</td>
+                  <td>(41)99888-8888</td>
+                </tr>
+                <tr>
+                  <td>William Felipe</td>
+                  <td>WillFelipe@gmail.com</td>
+                  <td>(41)99777-7777</td>
+                </tr>
+                <tr>
+                  <td>William Felipe</td>
+                  <td>WillFelipe@gmail.com</td>
+                  <td>(41)99777-7777</td>
+                </tr>
+                <tr>
+                  <td>Leonardo Kenji</td>
+                  <td>LeoKenji@gmail.com</td>
+                  <td>(41)99666-6666</td>
+                </tr>
+                <tr>
+                  <td>Leonardo Kenji</td>
+                  <td>LeoKenji@gmail.com</td>
+                  <td>(41)99666-6666</td>
+                </tr>
+                <tr>
+                  <td>Pedro Cagol</td>
+                  <td>PedroCagol@gmail.com</td>
+                  <td>(41)99555-5555</td>
+                </tr>
+                <tr>
+                  <td>Pedro Cagol</td>
+                  <td>PedroCagol@gmail.com</td>
+                  <td>(41)99555-5555</td>
+                </tr>
+                <tr>
+                  <td>Roberta Silva</td>
+                  <td>Rogs@gmail.com</td>
+                  <td>(41)99111-1111</td>
+                </tr>
+                <tr>
+                  <td>Roberta Silva</td>
+                  <td>Rogs@gmail.com</td>
+                  <td>(41)99111-1111</td>
+                </tr>
+              </tbody>
+            </table>
+          <a href="#">Fechar Relatório.</a>
+          </div>
+          </dialog>
+        </div>
+      </main>
+      <script>
+
+        const modal = document.querySelector("dialog");
+        const btnModal = document.querySelectorAll("a");
+
+        btnModal[3].onclick = function()
+        {
+            modal.showModal();
+        }
+        btnModal[4].onclick = function()
+        {
+            modal.close();
+        }
+
+        const linhas = document.querySelectorAll("tr");
+
+        linhas.forEach({
+
+        });
+
+
+      </script>
+      <footer>
+        <p>&copy; 2023 - Giga Chad HardWare - Todos os direitos reservados</p>
+      </footer>
+    </div>
+  </body>
+</html>

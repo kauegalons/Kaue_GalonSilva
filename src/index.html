@@ -1,0 +1,89 @@
+<!--
+Alterações feitas:
+    Fiz mudanças na pasta do relatório, no style.css e index.html do relatório
+      CSS  ->  Adicionei a classe dialog e a classe dialog::backdrop
+
+      HTML ->  Adicionei um novo link para exibir mais, abrindo uma janela com o relatório completo, mostrando o resto do relatório
+               Adicionei o Script, para trazer funções do JS, para abrir a janela com o relatório completo
+-->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Giga Chad HardWare</title>
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="screen">
+      <header>
+        <nav>
+          <ul>
+            <li class="active">Index</li>
+            <li><a href="./cadastro/index.html">Cadastro</a></li>
+            <li><a href="./produtos/index.html">Produto</a></li>
+            <li><a href="./relatorio/index.html">Relatório</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section
+          class="primary backdrop flex flex-col items-center justify-center"
+        >
+          <h1>Giga Chad Hardware</h1>
+          <p>Seja bem vindo à Gigachad hardware</p>
+        </section>
+        <section class="secondary flex flex-col items-center justify-center">
+          <div class="flex flex-col items-center secondary-title">
+            <h2>Temos uma variedade de produtos à sua disposição</h2>
+            <p>Confira nossos produtos</p>
+          </div>
+          <div class="card-container flex flex-wrap items-center">
+            <div
+              class="card backdrop flex flex-col items-center justify-end card-cpu"
+            >
+              <div><h4>CPU</h4></div>
+            </div>
+            <div
+              class="card backdrop flex flex-col items-center justify-end card-mobo"
+            >
+              <div><h4>Placa mãe</h4></div>
+            </div>
+            <div
+              class="card backdrop flex flex-col items-center justify-end card-gpu"
+            >
+              <div><h4>GPU</h4></div>
+            </div>
+            <div
+              class="card backdrop flex flex-col items-center justify-end card-ram"
+            >
+              <div><h4>RAM</h4></div>
+            </div>
+            <div
+              class="card backdrop flex flex-col items-center justify-end card-fonte"
+            >
+              <div><h4>Fonte</h4></div>
+            </div>
+          </div>
+          <a href="./produtos/index.html" class="button">
+            Veja nossos produtos
+          </a>
+        </section>
+        <section class="tertiary flex flex-col items-center justify-center">
+          <div class="tertiary-title flex flex-col items-center justify-center">
+            <h2>Não perca tempo!</h2>
+            <p>Cadastre-se já e tenha todas as vantagens de comprar conosco</p>
+          </div>
+          <div class="btn-container flex items-center">
+            <a href="./cadastro/index.html" class="button">Cadastrar</a>
+            <a href="./relatorio/index.html" class="button">Relátorio</a>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <p>&copy; 2023 - Giga Chad HardWare - Todos os direitos reservados</p>
+      </footer>
+    </div>
+  </body>
+</html>
