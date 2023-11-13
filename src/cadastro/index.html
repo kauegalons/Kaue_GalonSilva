@@ -22,16 +22,25 @@
       <main class="container">
         <section class="shadow">
           <h1>Cadastre-se</h1>
-          <form>
-            <input type="text" placeholder="Nome Completo" name="nome" />
+          <form id="form">
+            <input
+              type="text"
+              placeholder="Nome Completo"
+              name="nome"
+              class="required"
+              oninput="validacaoNome()"
+            />
+            <span class="span-required">Nome deve ter pelo menos 4 letras</span>
+
             <input type="email" placeholder="E-mail" name="email" />
             <input type="tel" placeholder="Telefone" name="telefone" />
-            <input type="password" placeholder="Senha" name="senha" />
+            <input type="password" placeholder="Senha" name="senha" class=/>
             <input
               type="password"
               placeholder="Confirmar senha"
               name="Csenha"
             />
+
             <button class="button" type="submit">Cadastrar</button>
             <a id="voltar" href="../index.html">Voltar</a>
           </form>
@@ -46,4 +55,27 @@
       </footer>
     </div>
   </body>
+  <script>
+    const form = document.getElementById('form')
+    const campos = document.querySelectorAll('.required')
+    const spans = document.querySelectorAll('.span-required')
+
+    function setError(index) {
+      campos[index].style.border = '2px solid #F0F8FF'
+      spans[index].style.display = 'block'
+    }
+
+    function removeError(index) {
+      campos[index].style.border = ''
+      spans[index].style.display = 'none'
+    }
+
+    function validacaoNome() {
+      if (campos[0].value.length < 4) {
+        setError(0)
+      } else {
+        removeError(0)
+      }
+    }
+  </script>
 </html>
