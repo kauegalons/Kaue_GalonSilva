@@ -158,8 +158,10 @@ btnModal[3].onclick = function()
 
 const linhas = document.querySelectorAll("tr");
 
-linhas.forEach({
-
+linhas.forEach((row, index) => {
+  if (index % 2 === 0) {
+    row.style.color = "rgb(56, 13, 74)";
+  }
 });
 
 </script>
